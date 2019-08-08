@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Movies Labs')
+@section('title', 'Actors')
 
 @section('content')
-    <p>Welcome</p>
+    <p>Actors content</p>
 @endsection
