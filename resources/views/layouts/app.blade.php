@@ -16,7 +16,7 @@
         <div class="container mx-auto color-white">
 
         <div class="logo">
-          <h1 class="color-green-500"><a href="/">MovieLabs</a></h1>
+          <h1 class="text-brand-light-green"><a href="/">Movie<span class="text-brand-dark-green">Labs</span></a></h1>
         </div>
 
         <nav class="links">
