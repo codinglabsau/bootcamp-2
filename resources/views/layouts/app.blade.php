@@ -6,18 +6,17 @@
 
         <title>@yield('title') | MovieLabs</title>
 
-        <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
-
-        <!-- Styles -->
+        <!-- Tailwind styles -->
         <link href="{{ mix('css/main.css') }}" rel="stylesheet"/>
     </head>
     <body>
 
-      <header>
+      <header class="bg-black text-white">
+
+        <div class="container mx-auto color-white">
 
         <div class="logo">
-          <h1><a href="/">MovieLabs</a></h1>
+          <h1 class="color-green-500"><a href="/">MovieLabs</a></h1>
         </div>
 
         <nav class="links">
@@ -26,6 +25,8 @@
             <li><a href="/movies">Movies</a></li>
           </ul>
         </nav>
+
+        </div>
 
       </header>
 
