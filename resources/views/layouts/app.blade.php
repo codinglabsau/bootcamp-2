@@ -11,7 +11,7 @@
     <link href="{{ mix('css/main.css') }}" rel="stylesheet" />
 </head>
 
-<body class="bg-brand-lightest-gray">
+<body class="bg-brand-lightest-gray text-white">
 
     <!-- Header -->
     <header class="bg-brand-dark-gray text-white ">
