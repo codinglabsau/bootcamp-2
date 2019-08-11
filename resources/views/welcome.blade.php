@@ -3,13 +3,15 @@
 @section('title', 'Movies Labs')
 
 @section('content')
-
-      <div class="cover">
-        <p>Cover!</p>
+      <!-- Hero -->
+      <div class="">
+        <p>Hero</p>
       </div>
-      <div class="movies-index">
+      <!-- Movies -->
+      <div class="">
         <p>Movies</p>
       </div>
+      <!-- Actors -->
       <div class="actors-index">
         <p>Actors</p>
       </div>
