@@ -1,5 +1,8 @@
 module.exports = {
   theme: {
+  lineHeight: {
+      inline: '0.1',
+  },
     extend: {
       colors: {
         'brand-light-green': '#86C232',

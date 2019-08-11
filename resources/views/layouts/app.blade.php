@@ -14,9 +14,9 @@
 <body class="bg-brand-lightest-gray">
 
     <!-- Header -->
-    <header class="bg-brand-dark-gray text-white">
+    <header class="bg-brand-dark-gray text-white ">
 
-        <div class="container mx-auto color-white p-4 flex">
+        <div class="container mx-auto color-white p-4 flex justify-between">
             <!-- MovieLabs Logo -->
             <div class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="57">
@@ -45,7 +45,7 @@
                         <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41v-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" /></svg>
                 </div>
                 <!-- green search box -->
-                <input class="px-10 py-2 bg-brand-light-green rounded-corners rounded justify-end placeholder-white" placeholder="Search" type="search" id="site-search" aria-label="Search through site content">
+                <input class="px-10 py-2 bg-brand-light-green align-baseline rounded-corners rounded justify-end placeholder-white hover:bg-brand-dark-green" placeholder="Search" type="search" id="site-search" aria-label="Search through site content">
             </div>
         </div>
 
