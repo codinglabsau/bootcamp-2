@@ -8,6 +8,7 @@ module.exports = {
         'brand-light-green': '#86C232',
         'brand-dark-green': '#66C63D',
         'brand-dark-gray': '#222629;',
+        'brand-semi-gray': '#34393C;',
         'brand-light-gray': '#474B4F;',
         'brand-lightest-gray': '#6B6E70;',
       }
