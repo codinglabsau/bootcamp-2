@@ -7,19 +7,15 @@
 
 <!-- container for hero -->
 <div class="bg-brand-semi-gray ">
-  <div class="container mx-auto p-12">
+  <div class="container mx-auto pr-12">
     <!-- Hero -->
-    <div class="flex">
-      <div class="p-4 w-2/3">
-        <h1 class="my-4 text-brand-dark-green text-4xl font-semibold">Welcome</h1>
-        <p class="mb-4 pr-12 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi metus
-          dui,
-          facilisis in posuere non, sagittis ac purus. Etiam ut rhoncus quam. Vestibulum vulputate eros sed
-          dui
-          iaculis, et aliquet ex eleifend. Vestibulum vel eros ac eros rhoncus finibus.<p>
+    <div class="flex p-4">
+      <div class="w-1/2 px-12 ">
+        <h1 class="my-4 text-brand-dark-green text-4xl font-semibold">Film Reviews</h1>
+        <p class="mb-4 text-white">Looking for a movie to see this week. Check out the latest releases in Australian cinemas, all reviewed by Movie Labs Critics.<p>
       </div>
-      <div class="p-4 w-1/3">
-        <img class="w-56 h-56" src="{{ asset('/imgs/Icon.png') }}" alt="">
+      <div class="w-1/2 ml-12">
+        <img class="" src="{{ asset('/imgs/hero-image.png') }}" alt="">
       </div>
     </div>
   </div>
