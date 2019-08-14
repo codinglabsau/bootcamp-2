@@ -26,24 +26,25 @@
                 </div>
             </a>
 
-            <!-- <nav class="links">
-                <ul>
-                    <li><a href="/actors">Actors</a></li>
-                    <li><a href="/movies">Movies</a>
-                    </li>
-                </ul>
-            </nav> -->
+            <!-- Container for  -->
+            <div class="flex inline-block">
+                <!-- navigation -->
+                <nav class="flex items-center">
+                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="/actors">Actors</a>
+                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="/movies">Movies</a>
+                </nav>
 
-            <!-- Search -->
-            <div class="relative">
-                <!-- Magnify icon --∏
-                <div class="absolute inset-y-0 left-0 flex items-center pl-2">
-                    <svg class="fill-current text-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41v-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
-                    </svg>
+                <!-- Search -->
+                <div class="relative">
+                    <!-- Magnify icon -->
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <svg class="fill-current text-white h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                            <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41v-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                        </svg>
+                    </div>
+                    <!-- green search box -->
+                    <input class="px-10 py-2 align-middle bg-brand-light-green align-baseline rounded-corners rounded justify-end placeholder-white hover:bg-brand-dark-green" placeholder="Search" type="search" id="site-search" aria-label="Search through site content">
                 </div>
-                <!-- green search box -->
-                <input class="px-10 py-2 align-middle bg-brand-light-green align-baseline rounded-corners rounded justify-end placeholder-white hover:bg-brand-dark-green" placeholder="Search" type="search" id="site-search" aria-label="Search through site content">
             </div>
         </div>
 
