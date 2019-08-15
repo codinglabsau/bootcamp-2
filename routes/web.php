@@ -22,3 +22,7 @@ Route::get('/actors', function () {
 Route::get('/movies', function () {
     return view('movies');
 });
+
+Route::get('/search', function () {
+    return view('search');
+});
