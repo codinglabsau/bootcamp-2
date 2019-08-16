@@ -16,12 +16,12 @@ class CreateMoviesTable extends Migration
         Schema::create('movies', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('Image');
-            $table->string('Description');
-            $table->float('Rating');
+            $table->string('image');
+            $table->string('description');
+            $table->float('rating');
             $table->timestamps();
         });
-        Schema::create('actor', function (Blueprint $table) {
+        /*Schema::create('actor', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('fName');
             $table->string('lName');
@@ -32,7 +32,7 @@ class CreateMoviesTable extends Migration
             $table->integer('movie_ID');
             $table->integer('actor_ID');
             $table->timestamps();
-        });
+        }); */
     }
 
     /**
