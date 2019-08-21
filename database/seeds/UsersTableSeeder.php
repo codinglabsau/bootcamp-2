@@ -1,9 +1,8 @@
 <?php
 
-use App\Movie;
 use Illuminate\Database\Seeder;
 
-class MovieTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,8 +11,6 @@ class MovieTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Movie::class)->create([
-            'title'=>"John Wick 3"
-        ]);
+        factory(\App\User::class, 3)->create();
     }
 }
