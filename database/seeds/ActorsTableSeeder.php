@@ -11,7 +11,7 @@ class ActorsTableSeeder extends Seeder
      */
     public function run()
     {
-        // factory(\App\Actor::class, 100)->create();
+        
         \App\Actor::insert([
             'id' => '1',
             'f_name' => 'Keanu',
@@ -57,5 +57,6 @@ class ActorsTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        factory(\App\Actor::class, 95)->create();
     }
 }

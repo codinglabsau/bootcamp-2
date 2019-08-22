@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class QuotesTableSeeder extends Seeder
+class MovieActorTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,27 +11,33 @@ class QuotesTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Quotes::insert([
-            'id' => '1',
+        \App\MovieActor::insert([
             'movie_id' => '1',
             'actor_id' => '1',
-            'quote' => 'Guns. Lots Of Guns - John Wick',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        \App\Quotes::insert([
-            'id' => '2',
+        \App\MovieActor::insert([
             'movie_id' => '2',
             'actor_id' => '2',
-            'quote' => "Avengers Assemble! - Scarlett Johansson",
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        \App\Quotes::insert([
-            'id' => '3',
+        \App\MovieActor::insert([
             'movie_id' => '2',
             'actor_id' => '3',
-            'quote' => "I'am Iron Man! - Robert Downey Jr.",
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        \App\MovieActor::insert([
+            'movie_id' => '2',
+            'actor_id' => '4',
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        \App\MovieActor::insert([
+            'movie_id' => '3',
+            'actor_id' => '5',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
