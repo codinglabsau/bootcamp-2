@@ -57,6 +57,6 @@ class ActorsTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        factory(\App\Actor::class, 95)->create();
+        // factory(\App\Actor::class, 95)->create();
     }
 }

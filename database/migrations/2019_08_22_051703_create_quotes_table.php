@@ -15,6 +15,7 @@ class CreateQuotesTable extends Migration
     {
         Schema::create('quotes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            //
             $table->integer('movie_id');
             $table->integer('actor_id');
             $table->longText('quote');
