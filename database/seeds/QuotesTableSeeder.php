@@ -35,5 +35,13 @@ class QuotesTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+        \App\Quotes::insert([
+            'id' => '4',
+            'movie_id' => '3',
+            'actor_id' => '5',
+            'quote' => "Whatever happened happened; it's like my senses have been dialed to eleven. - Tom Holland",
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 }
