@@ -32,47 +32,16 @@
   </div>
 
   <div class="flex -mx-4">
-
-    <!-- Movies component -->
-    <div class="w-1/4 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h3 class="mb-2 text-xl text-brand-dark-green">John Wick 3:
-        Parabellum
-      </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin viverra est et aliquet.
-        Vivamus sollicitudin velit ex,</p>
-    </div>
-
-    <!-- Movies component -->
-    <div class="w-1/4 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h3 class="mb-2 text-xl text-brand-dark-green">John Wick 3:
-        Parabellum
-      </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin viverra est et aliquet.
-        Vivamus sollicitudin velit ex,</p>
-    </div>
-
-    <!-- Movies component -->
-    <div class="w-1/4 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h3 class="mb-2 text-xl text-brand-dark-green">John Wick 3:
-        Parabellum
-      </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin viverra est et aliquet.
-        Vivamus sollicitudin velit ex,</p>
-    </div>
-
-    <!-- Movies component -->
-    <div class="w-1/4 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h3 class="mb-2 text-xl text-brand-dark-green">John Wick 3:
-        Parabellum
-      </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin viverra est et aliquet.
-        Vivamus sollicitudin velit ex,</p>
-    </div>
-
+    @foreach($movies as $movie)
+      <!-- Movies component -->
+      <div class="w-1/4 px-4">
+        <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
+        <h3 class="mb-2 text-xl text-brand-dark-green">
+          {{$movie->title}}
+        </h3>
+        <p>{{$movie->description}}</p>
+      </div>
+    @endforeach
   </div>
 
 
@@ -83,48 +52,14 @@
   </div>
 
   <div class="flex -mx-4">
-
+    @foreach($actors as $actor)
     <!-- Actor component -->
     <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
+      <img class="mb-4" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
+      <h4 class="mb-2 text-lg text-center text-brand-dark-green">{{$actor->f_name}} {{$actor->l_name}}
       </h4>
     </div>
-
-    <!-- Actor component -->
-    <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
-      </h4>
-    </div>
-
-    <!-- Actor component -->
-    <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
-      </h4>
-    </div>
-
-    <!-- Actor component -->
-    <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
-      </h4>
-    </div>
-
-    <!-- Actor component -->
-    <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
-      </h4>
-    </div>
-
-    <!-- Actor component -->
-    <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-      <h4 class="mb-2 text-lg text-center text-brand-dark-green">Robert Downey Jr.
-      </h4>
-    </div>
+    @endforeach
 
   </div>
 

@@ -13,4 +13,6 @@ class Movie extends Model
     {
         return $this->hasMany(Quote::class);
     }
+
+
 }

@@ -17,7 +17,7 @@ class ActorsTableSeeder extends Seeder
             'f_name' => 'Keanu',
             'l_name' => 'Reeves',
             'dob' => '02/09/1964',
-            'image' => 'imgs/actors/1.png',
+            'image' => 'imgs/actors/keanu.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -26,7 +26,7 @@ class ActorsTableSeeder extends Seeder
             'f_name' => 'Scarlett',
             'l_name' => 'Johansson',
             'dob' => '22/11/1984',
-            'image' => 'imgs/actors/2.png',
+            'image' => 'imgs/actors/scarlett.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -35,7 +35,7 @@ class ActorsTableSeeder extends Seeder
             'f_name' => 'Robert',
             'l_name' => 'Downey Jr.',
             'dob' => '04/04/1965',
-            'image' => 'imgs/actors/3.png',
+            'image' => 'imgs/actors/rdj.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -44,7 +44,7 @@ class ActorsTableSeeder extends Seeder
             'f_name' => 'Chris',
             'l_name' => 'Evans',
             'dob' => '13/06/1981',
-            'image' => 'imgs/actors/4.png',
+            'image' => 'imgs/actors/chris.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -53,7 +53,7 @@ class ActorsTableSeeder extends Seeder
             'f_name' => 'Tom',
             'l_name' => 'Holland',
             'dob' => '01/06/1996',
-            'image' => 'imgs/actors/5.png',
+            'image' => 'imgs/actors/tom.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
