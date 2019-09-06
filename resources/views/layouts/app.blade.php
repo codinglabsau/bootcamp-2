@@ -30,8 +30,8 @@
             <div class="flex inline-block">
                 <!-- navigation -->
                 <nav class="flex items-center">
-                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="/actors">Actors</a>
-                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="/movies">Movies</a>
+                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="{{ route('actors.index') }}">Actors</a>
+                    <a class="inline-block mr-12 text-gray-500 hover:text-white" href="{{ route('movies.index') }}">Movies</a>
                 </nav>
 
                 <!-- Search -->
