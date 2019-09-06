@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Actor extends Model
 {
     public function movies(){
-        return $this->belongsToMany(Movie::class,"actor_movie")->withTimestamps();
+        return $this->belongsToMany( Movie::class);
     }
 }
 
