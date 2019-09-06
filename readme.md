@@ -8,6 +8,7 @@
 - By default, the username is root and you can leave the password field empty. (This is for Xampp)
 - By default, the username is root and password is also root. (This is for Lamp)
 - Run "php artisan key:generate"
+- Run "composer dump-autoload"
 - Run "php artisan migrate:fresh" 
 - Run "php artisan db:seed"
 - Run "php artisan serve"
