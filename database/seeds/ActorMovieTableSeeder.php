@@ -12,6 +12,7 @@ class ActorMovieTableSeeder extends Seeder
      */
     public function run()
     {
+
         ActorMovie::insert([
             'movie_id' => '1',
             'actor_id' => '1',
@@ -44,3 +45,4 @@ class ActorMovieTableSeeder extends Seeder
         ]);
     }
 }
+

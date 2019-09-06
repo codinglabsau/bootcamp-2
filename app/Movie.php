@@ -8,7 +8,8 @@ class Movie extends Model
 
 {
     public function actors(){
-        return $this->belongsToMany(Actor::class, "actor_movie")->withTimestamps();
+        return $this->belongsToMany(Actor::class, "actor_movie", "id", "id")->withTimestamps();
+
     }
     public function quotes()
     {
