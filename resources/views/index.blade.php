@@ -54,6 +54,7 @@
   <div class="flex -mx-4">
     @foreach($actors as $actor)
     <!-- Actor component -->
+        <a href=""></a>
     <div class="w-1/6 px-4">
       <img class="mb-4" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
       <h4 class="mb-2 text-lg text-center text-brand-dark-green">{{$actor->f_name}} {{$actor->l_name}}
