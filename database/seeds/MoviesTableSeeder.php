@@ -6,6 +6,7 @@ use App\Quote;
 use Illuminate\Database\Seeder;
 
 class MoviesTableSeeder extends Seeder
+
 {
     /**
      * Run the database seeds.
@@ -70,9 +71,9 @@ class MoviesTableSeeder extends Seeder
 //            }
 //        }
 
-            
 
-        // factory(\App\Movie::class, 100)->create(); 
+
+        // factory(\App\Movie::class, 100)->create();
         // \App\Movie::insert([
         //     'title' => 'John Wick 3: Parabellum',
         //     'image' => 'imgs/movies/1.png',
@@ -87,7 +88,7 @@ class MoviesTableSeeder extends Seeder
         //     'description' => "The grave course of events set in motion by Thanos, that wiped out half the universe and fractured the Avengers ranks, compels the remaining Avengers to take one final stand in Marvel Studios' grand conclusion to twenty-two films - Avengers: Endgame.",
         //     'rating' => '5',
         //     'created_at' => now(),
-        //     'updated_at' => now(),          
+        //     'updated_at' => now(),
         // ]);
         // \App\Movie::insert([
         //     'title' => 'Spider-Man: Far From Home',
