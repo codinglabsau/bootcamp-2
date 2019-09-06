@@ -7,18 +7,33 @@
     <div class="container mx-auto bg-brand-light-gray p-4">
         <!-- Movie profile -->
         <!-- Movie header -->
-        <div class="flex -mx-4">
-        @foreach($movies as $movie)
-            <!-- Movies component -->
-                <div class="w-1/4 px-4">
-                    <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
-                    <h3 class="mb-2 text-xl text-brand-dark-green">
-                        <a href="movies/{{$movie->id}}">{{$movie->title}}</a>
-                    </h3>
-                    <p>{{$movie->description}}</p>
+        @foreach($movies as $m)
+            <div class="my-10">
+                <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
+                    <span class="pr-4 bg-brand-light-gray">{{$m->title}}</span></h2>
+            </div>
+            <!-- Movie Content -->
+            <div class="flex">
+                <div class="mx-16">
+                    <img src="{{ asset($m->image)}}" alt="">
+
                 </div>
-            @endforeach
-        </div>
+                <div>
+                    <p><strong>Genre:</strong></p>
+                    <p><strong>Duration: </strong></p>
+                    <p><strong>Director </strong></p>
+                </div>
+            </div>
+
+            <!-- Movie Synopsis -->
+            <div class="my-10">
+                <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
+                    <span class="pr-4 bg-brand-light-gray">Movie Synopsis</span></h2>
+            </div>
+            <!-- Movie Synopsis Content -->
+            <p>{{$m->description}}
+            </p>
+    @endforeach
     <!-- Quotes -->
         <div class="my-10">
             <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">

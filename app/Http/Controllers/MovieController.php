@@ -46,12 +46,12 @@ class MovieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-//    public function show($id)
-//    {
-//        $movie = Movie::all()->where('id', $id);
-//        //dd($movie);
-//        return view('movies.show')->with('movie', $movie);
-//    }
+    public function show($id)
+    {
+        $movies = Movie::all()->where('id', $id);
+        //dd($movie);
+        return view('movies.show')->with('movies', $movies);
+    }
 
     /**
      * Show the form for editing the specified resource.
