@@ -12,25 +12,17 @@
 */
 use App\Movie;
 use App\Actor;
+use App\Quote;
 
 Route::resource('movie', 'MovieController');
 
-Route::get('/', function () {
-    $movies = Movie::all();
-    $actors = Actor::all();
-    return view('index')->with('movies', $movies)->with('actors', $actors);
-    //dd($movies);
-
-    //return view('index');
-});
+Route::get('/', 'MovieController@index');
 
 Route::get('/actors', function () {
     return view('actors');
 });
 
-Route::get('/movies', function () {
-    return view('movies');
-});
+Route::get('/movies/{id}', 'MovieController@show');
 
 Route::get('/search', function () {
     return view('search');

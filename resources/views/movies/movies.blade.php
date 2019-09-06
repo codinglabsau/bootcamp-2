@@ -7,15 +7,16 @@
 <div class="container mx-auto bg-brand-light-gray p-4">
     <!-- Movie profile -->
     <!-- Movie header -->
+    @foreach($movie as $m)
     <div class="my-10">
         <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
-            <span class="pr-4 bg-brand-light-gray">Avengers: ENDGAME</span></h2>
+            <span class="pr-4 bg-brand-light-gray">{{$m->title}}</span></h2>
     </div>
     <!-- Movie Content -->
     <div class="flex">
         <div class="mx-16">
-            <img src="" alt="">
-            insert image here
+            <img src="{{ asset($m->image)}}" alt="">
+
         </div>
         <div>
             <p><strong>Genre:</strong></p>
@@ -30,9 +31,9 @@
             <span class="pr-4 bg-brand-light-gray">Movie Synopsis</span></h2>
     </div>
     <!-- Movie Synopsis Content -->
-    <p>Lorem ipsum dolor sit amet, et probo harum dicit pro. Nec te suas luptatum philosophia. At feugiat delectus vix. Detraxit posidonium nec eu. Expetendis sententiae accommodare at sit, et numquam appetere platonem est.
+    <p>{{$m->description}}
     </p>
-
+    @endforeach
     <!-- Quotes -->
     <div class="my-10">
         <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">

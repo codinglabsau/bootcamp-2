@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Actor;
+use App\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -13,7 +15,9 @@ class MovieController extends Controller
      */
     public function index()
     {
-        dd('just checking');
+        $movies = Movie::all()->take(4);
+        $actors = Actor::all()->take(6);
+        return view('index')->with('movies', $movies)->with('actors', $actors);
     }
 
     /**
@@ -45,7 +49,9 @@ class MovieController extends Controller
      */
     public function show($id)
     {
-        //
+        $movie = Movie::all()->where('id', $id);
+        //dd($movie);
+        return view('movies/movies')->with('movie', $movie);
     }
 
     /**

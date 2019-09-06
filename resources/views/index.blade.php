@@ -37,7 +37,7 @@
       <div class="w-1/4 px-4">
         <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
         <h3 class="mb-2 text-xl text-brand-dark-green">
-          {{$movie->title}}
+            <a href="movies/{{$movie->id}}">{{$movie->title}}</a>
         </h3>
         <p>{{$movie->description}}</p>
       </div>
