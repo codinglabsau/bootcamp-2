@@ -7,7 +7,7 @@
     <div class="container mx-auto bg-brand-light-gray p-4">
         <!-- Movie profile -->
         <!-- Movie header -->
-        @foreach($movie as $m)
+        @foreach($movies as $m)
             <div class="my-10">
                 <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
                     <span class="pr-4 bg-brand-light-gray">{{$m->title}}</span></h2>
