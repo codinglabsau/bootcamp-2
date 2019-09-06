@@ -6,7 +6,7 @@ use App\Actor;
 use App\Movie;
 use Illuminate\Http\Request;
 
-class MovieController extends Controller
+class indexController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,9 @@ class MovieController extends Controller
      */
     public function index()
     {
-        $movies = Movie::all();
-        return view('movies.index')->with('movies', $movies);
+        $movies = Movie::all()->take(4);
+        $actors = Actor::all()->take(6);
+        return view('index')->with('movies', $movies)->with('actors', $actors);
     }
 
     /**
@@ -48,9 +49,7 @@ class MovieController extends Controller
      */
     public function show($id)
     {
-        $movies = Movie::all()->where('id', $id);
-        //dd($movie);
-        return view('movies.show')->with('movies', $movies);
+        //
     }
 
     /**
