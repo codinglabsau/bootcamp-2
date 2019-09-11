@@ -31,14 +31,16 @@
       <span class="pr-4 bg-brand-light-gray">Movies</span></h2>
   </div>
 
-  <div class="flex -mx-4">
+  <div class="flex -mx-4 flex-wrap" >
     @foreach($movies as $movie)
       <!-- Movies component -->
-      <div class="w-1/4 px-4">
-        <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
-        <h3 class="mb-2 text-xl text-brand-dark-green">
-            <a href="movies/{{$movie->id}}">{{$movie->title}}</a>
-        </h3>
+      <div class="w-1/4 px-4  flex flex-col text-center items-center">
+          <a href="movies/{{$movie->id}}">
+            <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
+            <h3 class="mb-2 text-xl text-brand-dark-green">
+                {{$movie->title}}
+            </h3>
+          </a>
         <p>{{$movie->description}}</p>
       </div>
     @endforeach
@@ -56,7 +58,7 @@
     <!-- Actor component -->
         <a href=""></a>
     <div class="w-1/6 px-4">
-      <img class="mb-4" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
+      <img class="mb-4 w-56 h-64" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
       <h4 class="mb-2 text-lg text-center text-brand-dark-green">{{$actor->f_name}} {{$actor->l_name}}
       </h4>
     </div>

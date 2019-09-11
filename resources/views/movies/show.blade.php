@@ -59,8 +59,8 @@
             @foreach($cast as $c)
             <!-- Cast component -->
             <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset($c->image) }}" alt="{{$c->f_name}} {{$c->l_name}}">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
+                <img class="mb-4 w-56 h-64" src="{{ asset($c->image) }}" alt="{{$c->f_name}} {{$c->l_name}}">
+                <h4 class="mb-2 text-lg text-center text-brand-dark-green">{{$c->f_name}} {{$c->l_name}}
                 </h4>
                 <p class="text-xs text-gray-500">Tony Stark</p>
                 <p class="text-xs text-gray-500">Ironman</p>
