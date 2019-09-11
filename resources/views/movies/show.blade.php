@@ -56,61 +56,16 @@
         </div>
 
         <div class="flex -mx-4">
-
+            @foreach($cast as $c)
             <!-- Cast component -->
             <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
+                <img class="mb-4" src="{{ asset($c->image) }}" alt="{{$c->f_name}} {{$c->l_name}}">
                 <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
                 </h4>
                 <p class="text-xs text-gray-500">Tony Stark</p>
                 <p class="text-xs text-gray-500">Ironman</p>
             </div>
-
-            <!-- Cast component -->
-            <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
-                </h4>
-                <p class="text-xs text-gray-500">Tony Stark</p>
-                <p class="text-xs text-gray-500">Ironman</p>
-            </div>
-
-            <!-- Cast component -->
-            <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
-                </h4>
-                <p class="text-xs text-gray-500">Tony Stark</p>
-                <p class="text-xs text-gray-500">Ironman</p>
-            </div>
-
-            <!-- Cast component -->
-            <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
-                </h4>
-                <p class="text-xs text-gray-500">Tony Stark</p>
-                <p class="text-xs text-gray-500">Ironman</p>
-            </div>
-
-            <!-- Cast component -->
-            <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
-                </h4>
-                <p class="text-xs text-gray-500">Tony Stark</p>
-                <p class="text-xs text-gray-500">Ironman</p>
-            </div>
-
-            <!-- Cast component -->
-            <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{ asset('/imgs/John-Wick-3.png') }}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green">Ironman
-                </h4>
-                <p class="text-xs text-gray-500">Tony Stark</p>
-                <p class="text-xs text-gray-500">Ironman</p>
-            </div>
-
+            @endforeach
         </div>
 
     </div>

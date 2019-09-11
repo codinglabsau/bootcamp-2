@@ -49,12 +49,11 @@ class MovieController extends Controller
     public function show($id)
     {
         $movies = Movie::all()->where('id', $id);
-        $cast = App\Movie::find(1);
-        foreach ($cast->actors as $actor ){
-            //
+        $movie_cast = Movie::find($id);
+        foreach ($movie_cast->actors as $actor ){
         }
-        //dd($movie);
-        return view('movies.show')->with('movies', $movies);
+        $cast = $movie_cast->actors;
+        return view('movies.show')->with('movies', $movies)->with('cast', $cast);
     }
 
     /**
