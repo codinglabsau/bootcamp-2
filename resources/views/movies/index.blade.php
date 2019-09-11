@@ -8,10 +8,10 @@
         <!-- Movie profile -->
         <!-- Movie header -->
         <div class="flex -mx-4">
-        @foreach($movies as $movie)
-            <!-- Movies component -->
+            @foreach($movies as $movie)
+                <!-- Movies component -->
                 <div class="w-1/4 px-4">
-                    <img class="mb-4" src="{{$movie->image}}" alt="John Wick Movie Poster Image">
+                    <img class="mb-4" src="{{$movie->image}}" alt="{{$movie->title}} Poster Image">
                     <h3 class="mb-2 text-xl text-brand-dark-green">
                         <a href="movies/{{$movie->id}}">{{$movie->title}}</a>
                     </h3>
