@@ -52,6 +52,7 @@ class MovieController extends Controller
         $movie_cast = Movie::find($id);
         foreach ($movie_cast->actors as $actor ){
         }
+
         $cast = $movie_cast->actors;
         return view('movies.show')->with('movies', $movies)->with('cast', $cast);
     }
