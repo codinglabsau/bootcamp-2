@@ -9,8 +9,8 @@ $factory->define(Actor::class, function (Faker $faker) {
     return [
         'f_name' => $faker->firstName(),
         'l_name' => $faker->lastName(),
-        'image' => $faker->imageUrl(210, 311, 'people'), 
+        'image' => $faker->imageUrl(210, 311, 'people'),
         'dob' => $faker->dateTimeBetween('1950-01-01', '2012-12-31')
-            ->format('d/m/Y'), // outputs something like 17/09/2001
+            ->format('Y-m-d'), // outputs something like 17/09/2001
     ];
 });
