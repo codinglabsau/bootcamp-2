@@ -11,5 +11,9 @@ class Actor extends Model
     public function movies(){
         return $this->belongsToMany( Movie::class);
     }
+
+    public function quotes(){
+        return $this->hasMany(Quote::class);
+    }
 }
 

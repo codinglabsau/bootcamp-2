@@ -11,7 +11,7 @@ class QuotesTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Quotes::insert([
+        \App\Quote::insert([
             'id' => '1',
             'movie_id' => '1',
             'actor_id' => '1',
@@ -19,7 +19,7 @@ class QuotesTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        \App\Quotes::insert([
+        \App\Quote::insert([
             'id' => '2',
             'movie_id' => '2',
             'actor_id' => '2',
@@ -27,7 +27,7 @@ class QuotesTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        \App\Quotes::insert([
+        \App\Quote::insert([
             'id' => '3',
             'movie_id' => '2',
             'actor_id' => '3',
@@ -35,11 +35,11 @@ class QuotesTableSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        \App\Quotes::insert([
+        \App\Quote::insert([
             'id' => '4',
             'movie_id' => '3',
             'actor_id' => '5',
-            'quote' => "Whatever happened happened; it's like my senses have been dialed to eleven. - Tom Holland",
+            'quote' => "it's like my senses have been dialed to eleven. - Tom Holland",
             'created_at' => now(),
             'updated_at' => now(),
         ]);

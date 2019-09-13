@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Actor;
 use App\Movie;
+use App\Quote;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -50,11 +51,12 @@ class MovieController extends Controller
     {
         $movies = Movie::all()->where('id', $id);
         $movie_cast = Movie::find($id);
+        $quotes = Quote::all()->where('movie_id', $id);
         foreach ($movie_cast->actors as $actor ){
         }
-        print($movie_cast);
+        //print($quotes);
         $cast = $movie_cast->actors;
-        return view('movies.show')->with('movies', $movies)->with('cast', $cast);
+        return view('movies.show')->with('movies', $movies)->with('cast', $cast)->with('quotes', $quotes);
     }
 
     /**

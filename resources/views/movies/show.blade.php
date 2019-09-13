@@ -40,15 +40,11 @@
                 <span class="pr-4 bg-brand-light-gray">Quotes</span></h2>
         </div>
         <!-- Quotes Content -->
-        <p>Lorem ipsum dolor sit amet, et probo harum dicit pro. Nec te suas luptatum philosophia. At feugiat delectus vix. Detraxit posidonium nec eu. Expetendis sententiae accommodare at sit, et numquam appetere platonem est.
-        </p>
-
-        <!-- Screenshots -->
-        <div class="my-10">
-            <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
-                <span class="pr-4 bg-brand-light-gray">Screenshots</span></h2>
-        </div>
-
+        @foreach($quotes as $quote)
+            <p>
+                {{$quote->quote}}
+            </p>
+        @endforeach
         <!-- Cast -->
         <div class="my-10">
             <h2 class="text-3xl leading-inline text-brand-dark-green w-full text-left border-b-2 border-brand-dark-green ">
