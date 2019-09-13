@@ -19,13 +19,14 @@ class ExampleTest extends TestCase
     {
         factory(Movie::class)->create(['title'=>"Fast boi and their toys"]);
         factory(Movie::class)->create(['title'=>"Test movie 2"]);
-        factory(Actor::class)->create(['dob'=>""]);
+        factory(Actor::class)->create(['f_name'=>"John"]);
         $response = $this->get('/');
         $response->assertStatus(200);
         $response->assertSee("Fast boi and their toys");
         $response->assertSee("Test movie 2");
         $response = $this->get('/movies/2');
         $response->assertStatus(200);
+        $response->assertSee("Test movie 2");
         $response = $this->get('/actors/1');
         $response->assertStatus(200);
     }
