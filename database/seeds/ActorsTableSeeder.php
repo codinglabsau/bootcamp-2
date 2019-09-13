@@ -11,12 +11,12 @@ class ActorsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
         \App\Actor::insert([
             'id' => '1',
             'f_name' => 'Keanu',
             'l_name' => 'Reeves',
-            'dob' => '02/09/1964',
+            'dob' => '1964-09-02',
             'image' => 'imgs/actors/keanu.jpg',
             'created_at' => now(),
             'updated_at' => now(),
@@ -25,7 +25,7 @@ class ActorsTableSeeder extends Seeder
             'id' => '2',
             'f_name' => 'Scarlett',
             'l_name' => 'Johansson',
-            'dob' => '22/11/1984',
+            'dob' => '22-11-1984',
             'image' => 'imgs/actors/scarlett.jpg',
             'created_at' => now(),
             'updated_at' => now(),

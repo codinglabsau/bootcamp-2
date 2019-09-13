@@ -18,7 +18,7 @@ class CreateActorsTable extends Migration
             $table->increments('id');
             $table->string('f_name');
             $table->string('l_name');
-            $table->string('dob');
+            $table->date('dob');
             $table->string('image');
             $table->timestamps();
         });
