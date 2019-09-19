@@ -16,10 +16,12 @@
     @foreach($actors as $actor)
         <!-- Actor component -->
             <div class="w-1/6 px-4">
-                <img class="mb-4" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
-                <h4 class="mb-2 text-lg text-center text-brand-dark-green"><a href="actors/{{ $actor->id }}">{{$actor->f_name}} {{$actor->l_name}}</a>
+                <a href="actors/{{ $actor->id }}">
+                <img class="mb-4 w-56 h-64" src="{{$actor->image}}" alt="John Wick Movie Poster Image">
+                <h4 class="mb-2 text-lg text-center text-brand-dark-green">{{$actor->f_name}} {{$actor->l_name}}
 
                 </h4>
+                </a>
             </div>
         @endforeach
 

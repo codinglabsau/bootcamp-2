@@ -22,7 +22,7 @@
             <div>
                 <p><strong>Birth Name: </strong>{{$actor->f_name}} {{$actor->l_name}}</p>
                 <p><strong>Age: </strong>?</p>
-                <p><strong>DOB: </strong>?</p>
+                <p><strong>DOB: </strong>{{$actor->dob}}</p>
                 <p><strong>Height: </strong>?</p>
             </div>
         </div>
